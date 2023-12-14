@@ -1,0 +1,77 @@
+﻿@model IEnumerable<YalcomaniaTour.Entities.Tour>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Tur Listesi</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+     
+        <th>
+            @Html.DisplayNameFor(model => model.TourName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FullPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HalfPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GuestPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TourDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsActive)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tourproperties)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VehicleId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.TourName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FullPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HalfPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GuestPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TourDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsActive)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tourproperties)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VehicleId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.TourId }, new { @class = "btn btn-success " }) |
+            @Html.ActionLink("Details", "Details", new { id=item.TourId }, new { @class = "btn btn-info btn-xl" }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.TourId }, new { @class = "btn btn-danger btn-xl" })
+        </td>
+    </tr>
+}
+
+</table>

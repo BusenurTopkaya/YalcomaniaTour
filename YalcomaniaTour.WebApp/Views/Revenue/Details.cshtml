@@ -1,0 +1,40 @@
+﻿@model YalcomaniaTour.Entities.Revenue
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div>
+    <h4>Gelir detayı</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Explanation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Explanation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gain)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gain)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RevenueDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RevenueDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RevenueId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

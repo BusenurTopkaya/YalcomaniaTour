@@ -1,0 +1,40 @@
+﻿@model IEnumerable<YalcomaniaTour.Entities.Hotel>
+
+@{
+    ViewBag.Title = "Index";
+}
+<br />
+<h2>Hotel Listesi</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.HotelName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RoomNumber)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.HotelName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RoomNumber)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.HotelId }, new {@class = "btn btn-success " }) |
+            @Html.ActionLink("Details", "Details", new { id=item.HotelId }, new { @class = "btn btn-info btn-xl" }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.HotelId }, new { @class = "btn btn-danger btn-xl" })
+        </td>
+    </tr>
+}
+
+</table>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>

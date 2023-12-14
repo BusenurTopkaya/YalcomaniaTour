@@ -1,0 +1,90 @@
+﻿@model YalcomaniaTour.Entities.Ticket
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Bilet Detayları</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Regions.RegionName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Regions.RegionName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tours.TourName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tours.TourName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BranchOffice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BranchOffice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalSum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalSum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Paid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Paid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rest)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rest)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TicketDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TicketDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TicketId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

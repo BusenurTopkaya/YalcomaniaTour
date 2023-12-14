@@ -1,0 +1,88 @@
+﻿@model YalcomaniaTour.Entities.Tour
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+
+<h3>Silmek istediğinize emin misiniz?</h3>
+<div>
+    <h4>Tur bilgileri</h4>
+    <hr />
+    <dl class="dl-horizontal">
+       
+        <dt>
+            @Html.DisplayNameFor(model => model.TourName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TourName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FullPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FullPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HalfPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HalfPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GuestPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GuestPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TourDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TourDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsActive)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tourproperties)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tourproperties)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VehicleId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VehicleId)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

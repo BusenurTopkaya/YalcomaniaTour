@@ -1,0 +1,48 @@
+﻿@model YalcomaniaTour.Entities.Expense
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+
+
+<h3>Silmek istediğine emin misin?</h3>
+<div>
+    <h4>Gider</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Explanation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Explanation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dept)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dept)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpenseDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExpenseDate)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

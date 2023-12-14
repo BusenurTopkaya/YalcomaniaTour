@@ -1,0 +1,47 @@
+﻿@model YalcomaniaTour.Entities.Region
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+
+<h3>Silmek istediğine Emin misin?</h3>
+<div>
+    <h4>Bölge </h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Hotels.HotelName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hotels.HotelName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RegionName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegionName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceHour)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceHour)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

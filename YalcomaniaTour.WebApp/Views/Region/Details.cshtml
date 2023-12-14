@@ -1,0 +1,42 @@
+﻿@model YalcomaniaTour.Entities.Region
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+
+<div>
+    <h4>Bölge Detayları</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Hotels.HotelName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hotels.HotelName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RegionName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegionName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceHour)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceHour)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RegionId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<YalcomaniaTour.Entities.Vehicle>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Araç Listesi</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Plaque)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Chauffeur)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Plaque)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Chauffeur)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.VehicleId }, new { @class = "btn btn-success " }) |
+            @Html.ActionLink("Details", "Details", new { id=item.VehicleId }, new { @class = "btn btn-info btn-xl" }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.VehicleId }, new { @class = "btn btn-danger btn-xl" })
+        </td>
+    </tr>
+}
+
+</table>

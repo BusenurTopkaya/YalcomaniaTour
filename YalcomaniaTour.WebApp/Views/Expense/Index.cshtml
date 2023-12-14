@@ -1,0 +1,45 @@
+﻿@model IEnumerable<YalcomaniaTour.Entities.Expense>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Gider Listesi</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Explanation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dept)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ExpenseDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Explanation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dept)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ExpenseDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ExpenseId }, new { @class = "btn btn-success " }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ExpenseId }, new { @class = "btn btn-info btn-xl" }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ExpenseId }, new { @class = "btn btn-danger btn-xl" })
+        </td>
+    </tr>
+}
+
+</table>

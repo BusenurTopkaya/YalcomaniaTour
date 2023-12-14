@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YalcomaniaTour.WebApp", "YalcomaniaTour.WebApp\YalcomaniaTour.WebApp.csproj", "{A8FFE76D-D85A-4FF3-8427-CF227A656399}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YalcomaniaTour.DAL", "YalcomaniaTour.DAL\YalcomaniaTour.DAL.csproj", "{733CA0F5-B797-432D-ACDA-CE1F6FCB2572}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YalcomaniaTour.Entities", "YalcomaniaTour.Entities\YalcomaniaTour.Entities.csproj", "{AA57C085-A9A2-45C9-97B2-20483CCDD81E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YalcomaniaTour.BusinessLayer", "YalcomaniaTour.BusinessLayer\YalcomaniaTour.BusinessLayer.csproj", "{958C532C-D8B9-4B26-97D7-0A6B75F07BEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YalcomaniaTour.Common", "YalcomaniaTour.Common\YalcomaniaTour.Common.csproj", "{D0D0B54C-A492-4CD9-AC9C-06C4A91F75DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YalcomaniaTour.Core", "YalcomaniaTour.Core\YalcomaniaTour.Core.csproj", "{AD3FB213-0BC3-42DA-874B-8453B55E9216}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8FFE76D-D85A-4FF3-8427-CF227A656399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8FFE76D-D85A-4FF3-8427-CF227A656399}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8FFE76D-D85A-4FF3-8427-CF227A656399}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8FFE76D-D85A-4FF3-8427-CF227A656399}.Release|Any CPU.Build.0 = Release|Any CPU
+		{733CA0F5-B797-432D-ACDA-CE1F6FCB2572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{733CA0F5-B797-432D-ACDA-CE1F6FCB2572}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{733CA0F5-B797-432D-ACDA-CE1F6FCB2572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{733CA0F5-B797-432D-ACDA-CE1F6FCB2572}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA57C085-A9A2-45C9-97B2-20483CCDD81E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA57C085-A9A2-45C9-97B2-20483CCDD81E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA57C085-A9A2-45C9-97B2-20483CCDD81E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA57C085-A9A2-45C9-97B2-20483CCDD81E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{958C532C-D8B9-4B26-97D7-0A6B75F07BEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{958C532C-D8B9-4B26-97D7-0A6B75F07BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{958C532C-D8B9-4B26-97D7-0A6B75F07BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{958C532C-D8B9-4B26-97D7-0A6B75F07BEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0D0B54C-A492-4CD9-AC9C-06C4A91F75DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D0B54C-A492-4CD9-AC9C-06C4A91F75DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D0B54C-A492-4CD9-AC9C-06C4A91F75DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D0B54C-A492-4CD9-AC9C-06C4A91F75DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD3FB213-0BC3-42DA-874B-8453B55E9216}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD3FB213-0BC3-42DA-874B-8453B55E9216}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD3FB213-0BC3-42DA-874B-8453B55E9216}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD3FB213-0BC3-42DA-874B-8453B55E9216}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C9EDF784-6993-47A4-B754-60ACE8B302B5}
+	EndGlobalSection
+EndGlobal

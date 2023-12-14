@@ -1,0 +1,33 @@
+﻿@model YalcomaniaTour.Entities.Hotel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<br />
+<div>
+    <h4>Hotel Detayları</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HotelName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HotelName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RoomNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RoomNumber)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.HotelId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
